@@ -27,10 +27,17 @@ p {
 
 section {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     align-items: center;
     padding: 100px;
+    margin-top: 60px;
 
+}
+
+section.home {
+    flex-direction: row;
+    margin-top: 0;
 }
 
 /* BUTTON */
@@ -157,16 +164,65 @@ section {
     height: 110%;
 }
 
+/* SERVICES BOX */
+.services {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.services .service {
+    padding: 30px;
+    box-shadow: 0 10px 30px #00000059;
+}
+
+.services .service:hover {
+    box-shadow: 0 10px 30px #00000093;
+}
+
+.services .service h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #1b206e;
+}
+
+.services .service .icon img {
+    max-width: 100px;
+}
+
+/* WORK PAGE */
+
 @media(max-width: 1068px) {
     .home-img {
         display: none;
     }
+
     .logo {
         top: 10px;
         left: 40px;
         font-size: 1.5rem;
     }
+
     section {
         padding: 100px 40px;
+    }
+
+    .navigation ul li a {
+        font-size: 2rem;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr;
     }
 }
