@@ -390,3 +390,11 @@ section.home {
         margin: 0;
     }
 }
+
+@media (max-width: 395px) {
+    .contact-info .info-box .details a,
+    .contact-info .info-box .details p {
+        color: #111;
+        font-size: 0.5rem;
+    }
+}
