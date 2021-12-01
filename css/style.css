@@ -14,6 +14,7 @@
 /* BASE STYLES */
 html, body {
     font-family: 'Poppins', sans-serif;
+    transition: 1s;
 }
 
 h1 {
@@ -60,7 +61,7 @@ section.home {
 
 .logo {
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 100px;
     font-size: 2rem;
     font-weight: 700;
@@ -68,88 +69,157 @@ section.home {
 }
 
 /* TOGGLE */
-
-.toggle {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    background: var(--primary-color) url(../images/menu.png);
-    z-index: 20;
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
-.toggle.active {
-    background: var(--primary-color) url(../images/close.png);
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: center;
+@media (max-width: 1068px) {
+    .toggle {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        background: var(--primary-color) url(../images/menu.png);
+        z-index: 20;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .toggle.active {
+        background: var(--primary-color) url(../images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 /* NAVIGATION */
 .navigation {
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 15;
+    display: none;
+}
+.navigationDesktop {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 1rem;
+    margin-top: -1rem;
+    position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+    width: 350px;
+    flex-direction: column;
+    top: 90px;
+    left: 100px;
 }
-
-.navigation.active {
-    left: 0;
-}
-
-.navigation ul {
-    position: relative;
-}
-
-.navigation ul li {
-    position: relative;
+.navigationDesktop .navList {
     list-style: none;
-    text-align: center;
-}
-
-.navigation ul li a {
-    font-size: 2.2rem;
-    color: #111;
-    text-decoration: none;
-    font-weight: 300;
-}
-
-.navigation ul li a:hover {
-    color: var(--primary-color);
-}
-
-.navigation .social-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+}
+.navigationDesktop .navList li {
+    border: 1.5px solid var(--primary-color);
+    padding: 2px 4px;
+    border-radius: 5px;
+    transition: all 1s;
+}
+.navigationDesktop .navList a {
+    text-decoration: none;
+    color: black;
+}
+.navigationDesktop .navList li:hover {
+    background-color: var(--primary-color);
+    border: 1.5px solid black;
+}
+.navigationDesktop .live {
+    background-color: var(--primary-color);
+    border: 1.5px solid black;
+    transition: all 1s;
+}
+.navigationDesktop .live:hover {
+    background-color: transparent;
+    border: 1.5px solid var(--primary-color);
 }
 
-.navigation .social-bar a {
-    display: inline-block;
-    transform: scale(0.5);
+.navigationDesktop .social-bar .socialList {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.navigationDesktop img {
+    width: 20px;
 }
 
-.navigation .email-icon {
-    position: absolute;
-    bottom: 20px;
-    transform: scale(0.5);
+.navigationDesktop #fb {
+    width: 12px;
+}
+
+.navigationDesktop .email-icon {
+    margin-top: -5rem;
+}
+
+@media (max-width: 1068px) {
+    .navigationDesktop {
+        display: none;
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
+    
+    .navigation.active {
+        left: 0;
+    }
+    
+    .navigation ul {
+        position: relative;
+    }
+    
+    .navigation ul li {
+        position: relative;
+        list-style: none;
+        text-align: center;
+    }
+    
+    .navigation ul li a {
+        font-size: 2.2rem;
+        color: #111;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .navigation ul li a:hover {
+        color: var(--primary-color);
+    }
+    
+    .navigation .social-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navigation .social-bar a {
+        display: inline-block;
+        transform: scale(0.5);
+    }
+    
+    .navigation .email-icon {
+        position: absolute;
+        bottom: 20px;
+        transform: scale(0.5);
+    }
 }
 
 /* HOMEPAGE*/
@@ -157,6 +227,10 @@ section.home {
     position: relative;
     z-index: 10;
     max-width: 600px;
+}
+
+.home-content p{
+    text-shadow: 1px 2px 10px white;
 }
 
 .home-img {
@@ -167,6 +241,9 @@ section.home {
 }
 
 /* SERVICES BOX */
+.serviceSection {
+    margin-top: 10rem;
+}
 .services {
     margin-top: 40px;
     display: grid;
@@ -198,6 +275,9 @@ section.home {
 }
 
 /* WORK PAGE */
+.workSection {
+    margin-top: 10rem;
+}
 .portfolio {
     display: flex;
     justify-content: center;
@@ -244,6 +324,9 @@ section.home {
 }
 
 /* CONTACT */
+.contactSection {
+    margin-top: 10rem;
+}
 .contact {
     position: relative;
     width: 100%;
