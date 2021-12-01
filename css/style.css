@@ -181,6 +181,8 @@ section.home {
 }
 
 .services .service:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(90%);
     box-shadow: 0 10px 30px #00000093;
 }
 
@@ -337,7 +339,16 @@ section.home {
     .home-img {
         display: none;
     }
-
+    .home{
+        position: relative;
+        background-image: url("../images/portfolio-item2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .home-content{
+        position: absolute;
+        bottom: 0;
+    }
     .logo {
         top: 10px;
         left: 40px;
