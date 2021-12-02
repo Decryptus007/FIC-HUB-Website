@@ -41,7 +41,13 @@ section.home {
     flex-direction: row;
     margin-top: 0;
 }
-
+.title{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
 /* BUTTON */
 .btn {
     cursor: pointer;
