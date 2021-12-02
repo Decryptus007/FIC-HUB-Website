@@ -17,8 +17,8 @@ html, body {
     transition: 1s;
 }
 
-.index {
-    height: 100vh;
+body.index {
+    height: 100vh!important;
 }
 
 h1 {
