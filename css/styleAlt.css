@@ -1,9 +1,21 @@
+
+:root {
+    --primary-color: #f60f20;
+    --secondary-color: #1b206e;
+}
+
 .dark {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+    position: fixed;
+    top: 0;
+    right: 70px;
+    height: 60px;
     z-index: 99;
     cursor: pointer;
     padding: 1rem;
-    background-color: brown;
+    background-color: var(--primary-color);
+}
+
+.dark img {
+    width: 30px;
+    height: 30px;
 }

@@ -43,7 +43,6 @@ if (localStorage.getItem("switch") == 'dark') {
     light()
 }
 
-
 darkTggl.addEventListener('click', () => {
     if (chck == 1) {
         dark()
