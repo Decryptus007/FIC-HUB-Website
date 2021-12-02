@@ -20,7 +20,7 @@ const dark = () => {
     }
     img.src = '../images/sun.png'
     chck = 0
-    sessionStorage.setItem("switch", "dark");
+    localStorage.setItem("switch", "dark");
 }
 
 const light = () => {
@@ -34,13 +34,13 @@ const light = () => {
     }
     img.src = '../images/moon.png'
     chck = 1
-    sessionStorage.setItem("switch", "light");
+    localStorage.setItem("switch", "light");
 }
 
-if (sessionStorage.getItem("switch") == 'dark') {
+if (localStorage.getItem("switch") == 'dark') {
     dark()
 }
-if (sessionStorage.getItem("switch") == 'light') {
+if (localStorage.getItem("switch") == 'light') {
     light()
 }
 
