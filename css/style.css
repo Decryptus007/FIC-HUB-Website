@@ -149,6 +149,7 @@ a{
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
+    background-color: white;
 }
 .navigationDesktop img {
     width: 20px;

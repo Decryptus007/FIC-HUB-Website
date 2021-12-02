@@ -4,7 +4,7 @@ const toggle = document.querySelector('.toggle')
 const navigation = document.querySelector('.navigation')
 const darkTggl = document.getElementById('darkToggle')
 const elements = body.querySelectorAll('.navList li a')
-const overlayTxt = body.querySelector('.home-content p')
+const overlayTxt = body.querySelectorAll('.services .service')
 
 let chck = 1
 
@@ -14,7 +14,9 @@ const dark = () => {
     for (let element of elements) { 
         element.style.color = "white"
     }
-    overlayTxt.style.textShadow = '2px 2px 2px black'
+    for (let txt of overlayTxt) { 
+        txt.style.boxShadow = '0 5px 10px white'
+    }
     chck = 0
     sessionStorage.setItem("switch", "dark");
 }
@@ -25,7 +27,9 @@ const light = () => {
     for (let element of elements) { 
         element.style.color = "black"
     }
-    overlayTxt.style.textShadow = '1px 2px 10px white'
+    for (let txt of overlayTxt) {
+        txt.style.boxShadow = '0 10px 30px #00000059'
+    }
     chck = 1
     sessionStorage.setItem("switch", "light");
 }
