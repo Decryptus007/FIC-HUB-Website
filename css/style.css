@@ -17,6 +17,10 @@ html, body {
     transition: 1s;
 }
 
+.index {
+    height: 100vh;
+}
+
 h1 {
     font-size: 30px;
     font-weight: 500;
@@ -202,13 +206,13 @@ a{
     
     .navigation ul li a {
         font-size: 2.2rem;
-        color: #111;
+        color: #111!important;
         text-decoration: none;
         font-weight: 300;
     }
     
-    .navigation ul li a:hover {
-        color: var(--primary-color);
+    .navigation ul li a:active {
+        color: var(--primary-color)!important;
     }
     
     .navigation .social-bar {
@@ -436,13 +440,16 @@ a{
     }
     .home{
         position: relative;
-        background-image: url("../images/portfolio-item2.jpg");
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/portfolio-item2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
     .home-content{
         position: absolute;
         bottom: 0;
+    }
+    .home-content p {
+        text-shadow: none;
     }
     .logo {
         top: 10px;

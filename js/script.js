@@ -39,8 +39,7 @@ const light = () => {
 
 if (localStorage.getItem("switch") == 'dark') {
     dark()
-}
-if (localStorage.getItem("switch") == 'light') {
+}else if (localStorage.getItem("switch") == 'light') {
     light()
 }
 
