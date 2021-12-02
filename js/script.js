@@ -15,7 +15,7 @@ darkTggl.addEventListener('click', () => {
     if (chck == 1) {
         body.style.backgroundColor = 'black'
         body.style.color = 'white'
-        // navLinks.style.color = 'white'
+        // navLinks.style.color = 'white' 
         chck = 0
     } else {
         body.style.backgroundColor = 'white'
