@@ -74,6 +74,11 @@ a{
     z-index: 20;
 }
 
+.logo img {
+    /* width: 30px; */
+    height: 23px;
+}
+
 /* TOGGLE */
 @media (max-width: 1068px) {
     .toggle {
