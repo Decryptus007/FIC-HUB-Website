@@ -474,9 +474,7 @@ a{
 
     .services {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
         text-align: center;
-        /* padding: 30px auto; */
     }
 
     .contact {
