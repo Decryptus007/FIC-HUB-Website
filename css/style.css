@@ -270,6 +270,9 @@ a{
 
 .services .service {
     padding: 30px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
     box-shadow: 0 10px 30px #00000059;
 }
 
@@ -470,8 +473,9 @@ a{
 
     .services {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 20px;
         text-align: center;
+        /* padding: 30px auto; */
     }
 
     .contact {
@@ -494,6 +498,13 @@ a{
 @media (max-width: 768px) {
     .services {
         grid-template-columns: 1fr;
+    }
+
+    .services .service {
+        margin: 0 auto;
+        width: 90%;
+        font-size: small;
+        padding: 10px;
     }
 
     .contact-form .row {
