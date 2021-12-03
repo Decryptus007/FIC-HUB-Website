@@ -5,10 +5,13 @@ include_once('../portal/includes/config.php');
 
     if(isset($_POST['support'])){
    
-   $name = $_POST['name'];
+   $fname = $_POST['fname'];
+   $lname = $_POST['lname'];
    $email = $_POST['email'];
    $subject = $_POST['subject'];
    $message = $_POST['message'];
+
+   $name = "$fname ' ' $lname";
    
    $query = "INSERT INTO message(name, email, subject, message) ";
    $query .= "VALUES('{$name}','{$email}','{$subject}','{$message}' ) ";
@@ -41,7 +44,7 @@ include_once('../portal/includes/config.php');
 </head>
 <body>
     <header>
-        <div class="logo"><img src="./images//fichubLogo.jpg" alt="">FIC-HUB </div>
+    <div class="logo"><a href="index.html"><img src="./images//fichubLogo.jpg" alt="">FIC-HUB </a> </div>
         <div class="toggle"></div>
         <div class="dark" id="darkToggle">
             <img src="./images/moon.png" alt="">
@@ -119,31 +122,31 @@ include_once('../portal/includes/config.php');
         </div>
         <div class="contact">
             <div class="contact-form">
-                <form>
+                <form method="post">
                     <div class="row">
                         <div class="input50">
-                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="First Name" name="fname">
                         </div>
                         <div class="input50">
-                            <input type="text" placeholder="last Name">
+                            <input type="text" placeholder="last Name" name="lname">
                         </div>
                     </div>
                     <div class="row">
                         <div class="input50">
-                            <input type="text" placeholder="Email">
+                            <input type="email" placeholder="Email"  name="email">
                         </div>
                         <div class="input50">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input100">
-                            <textarea placeholder="Message"></textarea>
+                            <input type="text" placeholder="Subject" name="subject">
                         </div>
                     </div>
                     <div class="row">
                         <div class="input100">
-                            <input type="submit" value="Send">
+                            <textarea placeholder="Message" name="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input100">
+                            <input type="submit" value="Send" name="support">
                         </div>
                     </div>
                 </form>
@@ -153,24 +156,26 @@ include_once('../portal/includes/config.php');
                     <img src="images/address.png" alt="" class="contact-icon">
                     <div class="details">
                         <h4>Address</h4>
-                        <p>Amoyo, Kwara State, Nigeria</p>
+                        <p>No 50 Kwara State  <br> polytechnic gate, <br> Ilorin Kwara State <br></p>
                     </div>
                 </div>
                 <div class="info-box">
                     <img src="images/email.png" alt="" class="contact-icon">
                     <div class="details">
                         <h4>Email</h4>
-                        <a href="mailto:decryptus080@gmail.com">fichub4@gmail.com,</a>
-                        <a href="mailto:domnick080@outlook.com">domnick080@outlook.com</a>
+                        <a href="mailto:fichub4@gmail.com">fichub4@gmail.com,</a>
+                        <a href="mailto:domnick080@outlook.com">domnick080@outlook.com,</a>
+                        <a href="mailto:digilearn2020@gmail.com">digilearn2020@gmail.com</a>
+
                     </div>
                 </div>
                 <div class="info-box">
                     <img src="images/call.png" alt="" class="contact-icon">
                     <div class="details">
                         <h4>Call</h4>
-                        <a href="tel:+2347088435682">+234 708 843 5682,</a>
-                        <a href="tel:++2349031874139">+234 903 187 4139,</a>
-                        <a href="tel:+2349015755906">+234 901 575 5906,</a>
+                        <a href="tel:+2347088435682">+234 708 843 5682,</a> <br>
+                        <a href="tel:++2349031874139">+234 903 187 4139,</a> <br>
+                        <a href="tel:+2349015755906">+234 901 575 5906,</a> <br>
                         <a href="tel:+2349081726874">+234 908 172 6874</a>
                     </div>
                 </div>
