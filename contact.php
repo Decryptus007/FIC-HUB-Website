@@ -1,7 +1,7 @@
 
 <?php
 
-include_once('../portal/includes/config.php');
+include_once('portal/includes/config.php');
 
     if(isset($_POST['support'])){
    
