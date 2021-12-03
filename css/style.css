@@ -434,6 +434,9 @@ a{
     color: #111;
 }
 
+.info-box .details a:hover{
+    text-decoration: underline;
+}
 @media(max-width: 1068px) {
     .home-img {
         display: none;
