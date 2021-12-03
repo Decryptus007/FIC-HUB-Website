@@ -1,3 +1,33 @@
+
+<?php
+
+include_once('../portal/includes/config.php');
+
+    if(isset($_POST['support'])){
+   
+   $name = $_POST['name'];
+   $email = $_POST['email'];
+   $subject = $_POST['subject'];
+   $message = $_POST['message'];
+   
+   $query = "INSERT INTO message(name, email, subject, message) ";
+   $query .= "VALUES('{$name}','{$email}','{$subject}','{$message}' ) ";
+   
+   $msg_query = mysqli_query($con,$query);
+   if(!$msg_query){
+       die("Query Failed". mysqli_error($con));
+   }
+   echo "<script>alert('Message Sent and Recieved');</script>";
+   echo "<script type='text/javascript'> document.location = 'contact.php'; </script>";
+   
+   
+   
+   
+   }
+
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
