@@ -1,7 +1,7 @@
 
 <?php
 
-include_once('../portal/includes/config.php');
+include_once('portal/includes/config.php');
 
     if(isset($_POST['support'])){
    
@@ -56,7 +56,7 @@ include_once('../portal/includes/config.php');
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <!-- <li><a href="work.html">Work</a></li> -->
-                <li class="live"><a href="contact.html">Contact</a></li>
+                <li class="live"><a href="contact.php">Contact</a></li>
             </ul>
             <div class="social-bar">
                 <ul class="socialList">
