@@ -6,6 +6,7 @@ const darkTggl = document.getElementById('darkToggle')
 const elements = body.querySelectorAll('.navList li a')
 const overlayTxt = body.querySelectorAll('.services .service')
 const img = darkTggl.querySelector('img')
+const logo = document.getElementById('screenLogo')
 
 let chck = 1
 
@@ -19,6 +20,7 @@ const dark = () => {
         txt.style.boxShadow = '0 5px 10px white'
     }
     img.src = '../images/sun.png'
+    logo.src = '../images/favicon2.ico'
     chck = 0
     localStorage.setItem("switch", "dark");
 }
@@ -33,13 +35,14 @@ const light = () => {
         txt.style.boxShadow = '0 10px 30px #00000059'
     }
     img.src = '../images/moon.png'
+    logo.src = '../images/fichubLogo.jpg'
     chck = 1
     localStorage.setItem("switch", "light");
 }
 
 if (localStorage.getItem("switch") == 'dark') {
     dark()
-}else if (localStorage.getItem("switch") == 'light') {
+}else if ((localStorage.getItem("switch") == 'light') || (localStorage.getItem("switch") == null)) {
     light()
 }
 

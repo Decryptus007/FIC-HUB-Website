@@ -79,7 +79,6 @@ a{
 }
 
 .logo img {
-    /* width: 30px; */
     height: 23px;
 }
 
@@ -462,6 +461,9 @@ a{
         top: 10px;
         left: 40px;
         font-size: 1.5rem;
+    }
+    .logo img {
+        height: 18px;
     }
 
     section {
