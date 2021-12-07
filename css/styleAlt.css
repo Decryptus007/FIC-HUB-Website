@@ -68,6 +68,9 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
     }
+    .team .teamMember img{
+        height: 250px;
+    }
 }
 @media screen and (max-width:1050px){
     .team .teamMember{
