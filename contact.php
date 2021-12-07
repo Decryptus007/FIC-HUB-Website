@@ -1,7 +1,7 @@
 
 <?php
 
-include_once('portal/includes/config.php');
+include_once('../portal/includes/config.php');
 
     if(isset($_POST['support'])){
    
@@ -44,7 +44,7 @@ include_once('portal/includes/config.php');
 </head>
 <body>
     <header>
-    <div class="logo"><a href="index.html"><img src="./images//fichubLogo.jpg" alt="">FIC-HUB </a> </div>
+        <div class="logo"> <a href="index.html">FIC<img id="screenLogo" src="" alt="">HUB</a> </div>
         <div class="toggle"></div>
         <div class="dark" id="darkToggle">
             <img src="./images/moon.png" alt="">
@@ -87,7 +87,7 @@ include_once('portal/includes/config.php');
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <!-- <li><a href="work.html">Work</a></li> -->
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
             <div class="social-bar">
                 <ul class="socialList">
