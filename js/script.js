@@ -20,7 +20,7 @@ const dark = () => {
         txt.style.boxShadow = '0 5px 10px white'
     }
     img.src = '../images/sun.png'
-    logo.src = '../images/favicon2.ico'
+    logo.src = '../images/logo.jpg'
     chck = 0
     localStorage.setItem("switch", "dark");
 }
