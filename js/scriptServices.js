@@ -20,7 +20,7 @@ const dark = () => {
         txt.style.boxShadow = '0 5px 10px white'
     }
     img.src = '../images/sun.png'
-    logo.src = '../images/favicon2.ico'
+    logo.src = '../images/logo.jpg'
     chck = 0
     localStorage.setItem("switch", "dark");
 }
@@ -35,7 +35,7 @@ const light = () => {
         txt.style.boxShadow = '0 10px 30px #00000059'
     }
     img.src = '../images/moon.png'
-    logo.src = '../images/fichubLogo.jpg'
+    logo.src = '../images/logo.jpg'
     chck = 1
     localStorage.setItem("switch", "light");
 }

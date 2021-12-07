@@ -44,7 +44,7 @@ include_once('../portal/includes/config.php');
 </head>
 <body>
     <header>
-        <div class="logo"> <a href="index.html">FIC<img id="screenLogo" src="" alt="">HUB</a> </div>
+        <div class="logo"> <a href="index.html"><img id="screenLogo" src="" alt=""></a> </div>
         <div class="toggle"></div>
         <div class="dark" id="darkToggle">
             <img src="./images/moon.png" alt="">
