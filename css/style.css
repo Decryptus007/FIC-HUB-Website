@@ -458,13 +458,13 @@ a{
         text-shadow: none;
     }
     .logo {
-        top: 10px;
-        left: 40px;
+        top: 0px;
+        left: 30px;
         font-size: 1.5rem;
     }
     .logo img {
         width: 200px;
-        height: 50px;
+        height: 60px;
     }
 
     section {
