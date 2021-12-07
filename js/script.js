@@ -35,7 +35,7 @@ const light = () => {
         txt.style.boxShadow = '0 10px 30px #00000059'
     }
     img.src = '../images/moon.png'
-    logo.src = '../images/fichubLogo.jpg'
+    logo.src = '../images/logo.jpg'
     chck = 1
     localStorage.setItem("switch", "light");
 }
