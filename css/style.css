@@ -71,7 +71,7 @@ a{
 
 .logo {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 100px;
     font-size: 2rem;
     font-weight: 700;
@@ -79,7 +79,7 @@ a{
 }
 
 .logo img {
-    height: 23px;
+    height: 60px;
 }
 
 /* TOGGLE */
