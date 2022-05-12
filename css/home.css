@@ -34,7 +34,7 @@ section.home {
     background-color: blue;
     color: white;
     text-decoration: none;
-    box-shadow: 2px 2px 15px lightblue;
+    box-shadow: 1px 1px 10px lightblue;
     padding: 2% 4%;
     margin: 20px 0;
     border: 0;
@@ -43,6 +43,7 @@ section.home {
 
 .btn:hover {
     transform: scale(0.95);
+    box-shadow: none;
 }
 
 
