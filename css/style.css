@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     transition: .5s;
+    overflow-x: hidden;
 }
 
 /* BASE STYLES */
@@ -20,7 +21,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to bottom right, #29308a 60%, #282e86 40%);
     padding: 0 2% 2%;
-    overflow-x: hidden;
 }
 
 header {
