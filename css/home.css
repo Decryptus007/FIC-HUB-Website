@@ -34,6 +34,7 @@ section.home {
     background-color: blue;
     color: white;
     text-decoration: none;
+    box-shadow: 2px 2px 15px lightblue;
     padding: 2% 4%;
     margin: 20px 0;
     border: 0;
