@@ -1,61 +1,19 @@
-
 const body = document.querySelector('body')
-const toggle = document.querySelector('.toggle')
-const navigation = document.querySelector('.navigation')
-const darkTggl = document.getElementById('darkToggle')
-const elements = body.querySelectorAll('.navList li a')
-const overlayTxt = body.querySelectorAll('.services .service')
-const img = darkTggl.querySelector('img')
-const logo = document.getElementById('screenLogo')
+const slider = document.getElementById('slider')
+const navList = document.getElementById('navList')
 
-let chck = 1
+let sliderSwitch = false
 
-const dark = () => {
-    body.style.backgroundColor = 'black'
-    body.style.color = 'white'
-    for (let element of elements) { 
-        element.style.color = "white"
-    }
-    for (let txt of overlayTxt) { 
-        txt.style.boxShadow = '0 5px 10px white'
-    }
-    img.src = '../images/sun.png'
-    logo.src = '../images/logo.jpg'
-    chck = 0
-    localStorage.setItem("switch", "dark");
-}
-
-const light = () => {
-    body.style.backgroundColor = 'white'
-    body.style.color = 'black'
-    for (let element of elements) { 
-        element.style.color = "black"
-    }
-    for (let txt of overlayTxt) {
-        txt.style.boxShadow = '0 10px 30px #00000059'
-    }
-    img.src = '../images/moon.png'
-    logo.src = '../images/logo.jpg'
-    chck = 1
-    localStorage.setItem("switch", "light");
-}
-
-if (localStorage.getItem("switch") == 'dark') {
-    dark()
-}else if ((localStorage.getItem("switch") == 'light') || (localStorage.getItem("switch") == null)) {
-    light()
-}
-
-
-darkTggl.addEventListener('click', () => {
-    if (chck == 1) {
-        dark()
+slider.addEventListener('click', () => {
+    if (!sliderSwitch) {
+        body.style.transform = 'translateX(75%)'
+        slider.classList.remove('fa-sliders')
+        slider.classList.add('fa-close')
+        sliderSwitch = true
     } else {
-        light()
+        body.style.transform = 'translateX(0)'
+        slider.classList.remove('fa-close')
+        slider.classList.add('fa-sliders')
+        sliderSwitch = false
     }
-})
-
-toggle.addEventListener('click', () => {
-    toggle.classList.toggle('active')
-    navigation.classList.toggle('active')
 })

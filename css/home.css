@@ -1,0 +1,61 @@
+body.index {
+    height: 100vh !important;
+}
+
+section.home {
+    flex-direction: row;
+    margin-top: 0;
+    height: 85vh;
+}
+
+/* HOMEPAGE*/
+.home-content {
+    width: 60%;
+    padding-right: 2%;
+}
+
+.home-img {
+    width: 40%;
+    height: 100%;
+}
+
+.home-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+/* BUTTON */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 2% 4%;
+    margin: 20px 0;
+    border: 0;
+    transition: transform 0.3s linear;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+}
+
+
+@media (max-width: 520px) {
+    body.index {
+        background: linear-gradient(to bottom right, #222881e7 60%, #222881e7 40%), url('../images/Man\ sitting\ table\ with\ laptop3.png') center;
+        background-size: cover;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+}
