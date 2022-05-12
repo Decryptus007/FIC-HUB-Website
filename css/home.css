@@ -31,8 +31,8 @@ section.home {
 .btn {
     cursor: pointer;
     display: inline-block;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: white;
+    color: var(--primary-color);
     text-decoration: none;
     padding: 2% 4%;
     margin: 20px 0;
