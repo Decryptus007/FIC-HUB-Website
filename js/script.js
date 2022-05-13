@@ -12,7 +12,7 @@ slider.addEventListener('click', () => {
         slider.classList.add('fa-close')
         sliderSwitch = true
     } else {
-        body.style.transform = 'translateX(0)'
+        body.style.transform = null
         body.classList.remove('stop-scrolling')
         slider.classList.remove('fa-close')
         slider.classList.add('fa-sliders')

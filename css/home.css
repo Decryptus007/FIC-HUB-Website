@@ -6,6 +6,7 @@ section.home {
     flex-direction: row;
     margin-top: 0;
     height: 85vh;
+    padding: 0 1%;
 }
 
 /* HOMEPAGE*/
@@ -34,11 +35,10 @@ section.home {
     background-color: blue;
     color: white;
     text-decoration: none;
-    box-shadow: 1px 1px 10px lightblue;
+    box-shadow: 1px 1px 10px rgb(21, 41, 48);
     padding: 2% 4%;
     margin: 20px 0;
     border: 0;
-    transition: transform 0.3s linear;
 }
 
 .btn:hover {
@@ -48,9 +48,17 @@ section.home {
 
 
 @media (max-width: 520px) {
+    .index .socialList {
+        right: -8%;
+    }
+
     body.index {
         background: linear-gradient(to bottom right, #222881e7 60%, #222881e7 40%), url('../images/Man\ sitting\ table\ with\ laptop3.png') center;
         background-size: cover;
+    }
+
+    section.home {
+        padding: 0 5%;
     }
 
     .home-img {
