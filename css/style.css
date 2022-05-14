@@ -89,6 +89,9 @@ header i.fa-sliders {
 
 .navList img {
     display: none;
+    width: 50%;
+    height: 50px;
+    object-fit: cover;
 }
 
 .navList a {
