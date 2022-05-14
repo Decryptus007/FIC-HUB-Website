@@ -57,6 +57,10 @@ section.home {
         background-size: cover;
     }
 
+    header {
+        background-color: #222881e7;
+    }
+
     section.home {
         padding: 0 5%;
     }

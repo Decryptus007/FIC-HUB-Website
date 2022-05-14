@@ -1,0 +1,90 @@
+/* style for the team page */
+.teamSection {
+    text-align: center;
+    height: 100%;
+}
+
+.teamSection .team{
+    margin: 3% auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.teamMember{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: space-between;
+    width: 23%;
+    height: 450px;
+    background: linear-gradient(to bottom right, #3c44b1 60%, #2f3694 40%);
+    box-shadow: 2px 2px 15px #00000070;
+}
+
+.team .teamMember img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team .teamMember .member-info{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.teamMember .social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.teamMember .social i {
+    padding: 5% 7%;
+    background-color: white;
+    font-size: x-large;
+}
+
+.teamMember .social i.fa-facebook{
+    color: blue;
+}
+
+.teamMember .social i.fa-linkedin{
+    color: blue;
+}
+
+.teamMember .social i.fa-twitter{
+    color: skyblue;
+}
+
+.teamMember .social i.fa-telegram{
+    color: blue;
+}
+
+@media (max-width: 768px){
+    .teamMember {
+        width: 40%;
+        margin-bottom: 2%;
+    }
+
+}
+
+@media (max-width: 425px){
+    .teamMember {
+        width: 80%;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+
+    .socialList {
+        right: -7%;
+    }
+
+}
+/* style for the team page ends here */

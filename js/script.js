@@ -6,6 +6,7 @@ let sliderSwitch = false
 
 slider.addEventListener('click', () => {
     if (!sliderSwitch) {
+        navList.style.top = `${window.pageYOffset}px`
         body.style.transform = 'translateX(75%)'
         body.classList.add('stop-scrolling')
         slider.classList.remove('fa-sliders')
