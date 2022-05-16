@@ -101,8 +101,23 @@ header i.fa-sliders {
 }
 
 .navList a:hover {
-    background-color: blue;
-    border: 1.5px solid black;
+    animation: pulse .4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 1px 1px 7.5px 15px #414aca;
+    }
+
+    90% {
+        box-shadow: none;
+    }
+
+    100% {
+        background-color: blue;
+        border: 1.5px solid black;
+    }
 }
 
 .live {
